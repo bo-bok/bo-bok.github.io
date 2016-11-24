@@ -15,45 +15,77 @@ body {
 
 .page-container {
   min-width: 100%;
-  min-height: 100%;
 }
 
 .content-container {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  max-height: 50%;
+  margin: auto;
+  padding: 0;
 }
 
 .text-container {
-  float: left;
-  clear: both;
+  width: 100%;
+  text-align: center;
 }
 
 .text-container p {
   font-family: 'Cabin Sketch', cursive;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 3em;
   color: #524E52;
-  max-width: 100%;
   word-wrap: break-word;
 }
 
 .image-container {
-  float: right;
-  clear: both;
+  width: 100%;
+  text-align: center;
 }
 
 .image-container img {
   max-width: 60%;
   max-height: 60%;
 }
+
+
+/* DESKTOP STYLING */
+@media (min-width: 992px) {
+
+  .content-container {
+    padding: 15%;
+  }
+
+  .text-container {
+    float: left;
+    clear: both;
+    text-align: left;
+    width: 50%;
+  }
+
+  .text-container p {
+    font-size: 4em;
+  }
+
+  .image-container {
+    float: right;
+    clear: both;
+    margin-bottom: 0;
+    text-align: right;
+    width: 50%;
+  }
+
+  .image-container img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+}
+
 /* dev styles */
 .page-container {
   /*background-color: pink;*/
 }
 
 .content-container {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 .text-container {
