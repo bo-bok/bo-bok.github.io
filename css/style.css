@@ -23,11 +23,13 @@ body {
 }
 
 .text-container {
-
+  float: left;
+  clear: both;
 }
 
 .image-container {
-
+  float: right;
+  clear: both;
 }
 
 
@@ -45,5 +47,5 @@ body {
 }
 
 .image-container {
-  background-color: green;  
+  background-color: green;
 }
