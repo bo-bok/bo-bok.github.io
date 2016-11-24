@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: -15px 0 0 -15px;
   background: url(../assets/under-construction-assets/triangle.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,9 +16,6 @@ body {
 .page-container {
   min-width: 100%;
   min-height: 100%;
-  /*position: fixed;*/
-  margin-top: -15px;
-  margin-left: -15px;
 }
 
 .content-container {
@@ -49,7 +47,7 @@ body {
 }
 /* dev styles */
 .page-container {
-  background-color: pink;
+  /*background-color: pink;*/
 }
 
 .content-container {
