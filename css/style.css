@@ -29,6 +29,13 @@ body {
   clear: both;
 }
 
+.text-container p {
+  font-family: 'Cabin Sketch', cursive;
+  text-transform: uppercase;
+  font-size: 4.5em;
+  color: #524E52;
+}
+
 .image-container {
   float: right;
   clear: both;
@@ -50,4 +57,4 @@ body {
 
 .image-container {
   background-color: green;
-}
+}*/
