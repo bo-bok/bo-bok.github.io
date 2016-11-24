@@ -41,7 +41,10 @@ body {
   clear: both;
 }
 
-
+.image-container img {
+  max-width: 60%;
+  max-height: 60%;
+}
 /* dev styles */
 .page-container {
   background-color: pink;
@@ -57,4 +60,4 @@ body {
 
 .image-container {
   background-color: green;
-}*/
+}
