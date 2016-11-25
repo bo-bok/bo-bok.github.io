@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: -15px 0 0 -15px;
+  background: url(../assets/under-construction-assets/triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.page-container {
+  min-width: 100%;
+}
+
+.content-container {
+  margin: auto;
+  padding: 0;
+}
+
+.text-container {
+  width: 100%;
+  text-align: center;
+}
+
+.main-text {
+  font-family: 'Cabin Sketch', cursive;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #524E52;
+  word-wrap: break-word;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+
+/* DESKTOP STYLING */
+@media (min-width: 768px) {
+
+  .content-container {
+    width: 90%;
+    margin-left: 5%;
+    padding: 15px;
+  }
+
+  .text-container {
+    float: left;
+    clear: both;
+    text-align: left;
+    width: 80%;
+    padding-top: 4em;
+  }
+
+  .main-text {
+    font-size: 4em;
+  }
+
+  .image-container {
+    float: right;
+    clear: both;
+    margin-bottom: 0;
+    text-align: right;
+    width: 50%;
+    padding-top: 4em;
+  }
+
+  .image-container img {
+    max-width: 65%;
+    max-height: 65%;
+  }
+
+}
