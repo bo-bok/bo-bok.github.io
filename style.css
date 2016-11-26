@@ -11,14 +11,6 @@ body {
   min-width: 320px;
 }
 
-.page-content-container {
-  width: 90%;
-  margin: auto;
-  /*overflow: hidden;*/
-  min-height: 100%;
-}
-
-
 /* HEADER */
 .header {
   background-color: yellow;
@@ -71,6 +63,14 @@ body {
   z-index: 1;
 }
 
+.page-content-container {
+  width: 90%;
+  margin: auto;
+  /*overflow: hidden;*/
+  min-height: 100%;
+  background-color: red;
+}
+
 /* Landing page */
 #page1 {
   background: url('ocean.jpg');
@@ -80,8 +80,7 @@ body {
 }
 
 .page1-opacity-layer {
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -101,9 +100,6 @@ body {
   background: green;
 }
 
-.page-content-container {
-  /*background-color: yellow;*/
-}
 
 #page1 {
   /*background-color: orange;*/
