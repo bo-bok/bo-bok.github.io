@@ -18,6 +18,20 @@ body {
   min-height: 100%;
 }
 
+
+/* HEADER */
+.header {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+
+  width: 100%;
+  min-height: 70px;
+  
+  padding: 20px 25px 20px 25px;
+}
+
 /* PAGE FORMATTING */
 #page1,
 #page2,
@@ -32,7 +46,6 @@ body {
 #page1 {
   background: url('ocean.jpg');
 }
-
 
 /*@media (min-width: 786px) {
 
