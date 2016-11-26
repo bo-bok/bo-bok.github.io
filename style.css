@@ -32,8 +32,23 @@ body {
   padding: 20px 25px 20px 25px;
 }
 
+
+/* main site navigation */
+.nav {
+  max-width: 20%;
+  background: pink;
+  float: left;
+}
+
+.nav-menu-icon {
+  height: 48px;
+  width: 48px;
+}
+
+
+/* coding site icons */
 .coding-icon-nav {
-  max-width: 50%;
+  max-width: 60%;
   background: pink;
   float: right;
 
