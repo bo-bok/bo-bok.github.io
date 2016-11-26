@@ -53,7 +53,7 @@ body {
 
 
 
-/* PAGE FORMATTING */
+/* PAGE FORMATTING [all pages] */
 #page1,
 #page2,
 #page3,
@@ -63,20 +63,12 @@ body {
   z-index: 1;
 }
 
-.page-content-container {
+.page-content-base {
   width: 90%;
   margin: auto;
   /*overflow: hidden;*/
   min-height: 100%;
   background-color: red;
-}
-
-/* Landing page */
-#page1 {
-  background: url('ocean.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-position: center*/
 }
 
 .page1-opacity-layer {
@@ -85,6 +77,30 @@ body {
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+.page-content-container-wrapper {
+  display: table;
+  background: blue;
+  min-height: 100%;
+  width: 90%;
+  position: absolute;
+}
+
+.page-content-container {
+  display: table-cell;
+  vertical-align: middle;
+  background: green;
+  border-bottom: grey 10px solid;
+}
+
+
+/* Landing page */
+#page1 {
+  background: url('ocean.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: center*/
 }
 
 /*@media (min-width: 786px) {
@@ -101,8 +117,8 @@ body {
 }
 
 
-#page1 {
-  /*background-color: orange;*/
+/*#page1 {
+  background-color: orange;
 }
 #page2 {
   background-color: teal;
@@ -112,4 +128,4 @@ body {
 }
 #page4 {
   background-color: red;
-}
+}*/
