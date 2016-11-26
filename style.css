@@ -11,12 +11,11 @@ body {
   min-width: 320px;
 }
 
-.content-container {
+.page-content-container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
+  /*overflow: hidden;*/
   min-height: 100%;
-  position: relative;
 }
 
 /* PAGE FORMATTING */
@@ -25,13 +24,14 @@ body {
 #page3,
 #page4 {
   height: 1000px;
+  position: relative;;
+  z-index: 1;
 }
 
-/*.blue-rectangle {
-  width: 100%;
-  height: 500px;
-  background-color: blue;
-}*/
+/* Landing page */
+#page1 {
+  background: url('ocean.jpg');
+}
 
 
 /*@media (min-width: 786px) {
@@ -47,13 +47,12 @@ body {
   background: green;
 }
 
-
-.content-container {
-  background: yellow;
+.page-content-container {
+  /*background-color: yellow;*/
 }
 
 #page1 {
-  background-color: orange;
+  /*background-color: orange;*/
 }
 #page2 {
   background-color: teal;
