@@ -45,6 +45,9 @@ body {
 /* Landing page */
 #page1 {
   background: url('ocean.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: center;*/
 }
 
 .page1-opacity-layer{
