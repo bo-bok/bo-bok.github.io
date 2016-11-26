@@ -11,6 +11,13 @@ body {
   min-width: 320px;
 }
 
+.content-container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
 
 /* PAGE FORMATTING */
 #page1,
@@ -20,23 +27,11 @@ body {
   height: 1000px;
 }
 
-
-
-/*.page-container {
-  overflow: hidden;
-  min-height: 100%;
-  position: relative;
-}
-
-.blue-rectangle {
+/*.blue-rectangle {
   width: 100%;
   height: 500px;
   background-color: blue;
 }*/
-
-.page-container {
-
-}
 
 
 /*@media (min-width: 786px) {
@@ -51,11 +46,11 @@ html {
 body {
   background: green;
 }
-/*
-.page-container {
-  background: yellow;
-}*/
 
+
+.content-container {
+  background: yellow;
+}
 
 #page1 {
   background-color: orange;
