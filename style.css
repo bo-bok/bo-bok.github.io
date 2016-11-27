@@ -59,10 +59,30 @@ body {
 #page2,
 #page3,
 #page4 {
-  height: 1000px;
+  /*height: 1000px;*/
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  overflow: hidden;
+}
 
-  position: relative;;
-  z-index: 1;
+@media (max-height: 780px) {
+#page1,
+#page2,
+#page3,
+#page4 {
+    position: relative;
+    display: table;
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+@media (max-height: 780px) {
+.test-container {
+    padding: 150px 0;
+  }
 }
 
 .page-content-base {
