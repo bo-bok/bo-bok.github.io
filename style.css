@@ -9,173 +9,141 @@ html, body {
 body {
   margin: 0;
   min-width: 320px;
+  /*background: pink;*/
+}
 
+.page-container { 
+  position: relative ;
+  z-index: 1;
+  transform-origin: 50% 50vh;
+  background-color: green;
 }
 
 /* HEADER */
 .header {
-  background-color: yellow;
   position: absolute;
   top: 0;
   z-index: 999;
-
-  /*width: 100%;*/
+  background-color: orange;
+  width: 100%;
   min-height: 70px;
+  padding: 10px;
+  display: table;
+}
 
-  padding: 20px 25px 20px 25px;
+.header-logo,
+.header-menu
+ {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-logo {
+  width: 50%;
+  background-color: yellow;
+  text-align: left;
 }
 
 
-/* main site navigation */
-.nav {
-  max-width: 20%;
-  background: pink;
-  float: left;
-}
-
-.nav-menu-icon {
-  height: 48px;
-  width: 48px;
+.header-menu {
+  width: 50%;
+  background-color: green;
+  text-align: right;
+  position: fixed;
 }
 
 
-/* coding site icons */
-.coding-icon-nav {
-  max-width: 60%;
-  background: pink;
-  float: right;
 
-}
-.coding-icon {
-  height: 48px;
-  width: 48px;
-  margin-left: 10px;
-}
-
-
-/* PAGE FORMATTING [all pages] */
-#page1,
-#page2,
-#page3,
-#page4 {
-  /*height: 1000px;*/
+.home-container {
   top: 0;
   left: 0;
   z-index: 8;
   width: 100%;
   overflow: hidden;
+  background-color: pink;
+  text-align: center;
+  background: url('NR_DoL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.home-content-container {
+/*background-color: black;*/
+/*min-height: 100%;*/
+position: relative;
+min-height: 100vh;
+height: auto;
+/*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.home-opacity-layer {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-height: 780px) {
-#page1,
-#page2,
-#page3,
-#page4 {
+  .home-container {
     position: relative;
     display: table;
     min-height: 100vh;
     height: auto;
+    background-color: red;
   }
-}
 
-@media (max-height: 780px) {
-.test-container {
+  .home-content-container {
     padding: 150px 0;
   }
+
 }
 
-.page-content-base {
-  width: 90%;
+.home-content-container h1 {
+    margin-bottom: 30px;
+    font-size: 100px;
+    line-height: .73;
+  }
+
+.home-content-container h6 {
+  max-width: 710px;
   margin: auto;
-  /*overflow: hidden;*/
-  min-height: 100%;
-  background-color: red;
+  font-size: 16px;
 }
 
-.page1-opacity-layer {
-  background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  height: 100%;
+.coding-site-icon-bar {
+  min-width: 40%;
+  max-width: 80%;
+  background-color: yellow;
+  margin: auto;
+  font-size: 48px;
+
+}
+
+/* PROJECT PAGES */
+
+.homepage-project {
   width: 100%;
-  z-index: 2;
-}
-
-.page-content-container-wrapper {
+  height: 100vh;
+  position: relative;
   display: table;
-  background: blue;
-  min-height: 100%;
-  width: 90%;
-  position: absolute;
 }
 
-.page-content-container {
+.homepage-project-content {
+  width: 100%;
+  padding: 10px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  background: green;
-  border-bottom: grey 10px solid;
-  max-width: 100%;
-  padding: 0 25px 0 25px;
 }
 
 
-/* Landing page */
-#page1 {
+#homepage-project-1 {
   background: url('ocean.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-position: center*/
 }
 
-.home-caption {
-  font-size: 5em; /* remember to change w/ queries*/
-  line-height: .95;
-  margin-bottom: 0;
-  text-transform: uppercase;
+#homepage-project-2 {
+  background: url('NR_DoL.jpeg');
 }
 
-
-.home-text {
-  line-height: 1.42;
-  color: #fff;
-  max-width: 710px;
-  margin: 0 auto 42px;
-  font-size: 16px;
-  word-wrap: break-word;
-
-  /*font-weight: 300; */
+#homepage-project-3 {
+  background: url('NR_Z.jpg');
 }
-
-@media(min-width: 860px) {
-  .home-caption {
-    font-size: 12.5em; /* remember to change w/ queries*/
-  }
-
-}
-
-/*@media (min-width: 786px) {
-
-}*/
-
-/* DEV DIV STYLES */
-html {
-  background: pink;
-}
-
-body {
-  background: green;
-}
-
-
-/*#page1 {
-  background-color: orange;
-}
-#page2 {
-  background-color: teal;
-}
-#page3 {
-  background-color: grey;
-}
-#page4 {
-  background-color: red;
-}*/
