@@ -58,9 +58,22 @@ body {
   min-width: 40%;
   max-width: 80%;
   background-color: yellow;
-  margin:auto;
+  margin: auto;
   font-size: 48px;
 
+}
+
+/* PROJECT PAGES */
+#homepage-project-1 {
+  background: url('ocean.jpg');
+}
+
+#homepage-project-2 {
+  background: url('NR_DoL.jpeg');
+}
+
+#homepage-project-3 {
+  background: url('NR_Z.jpg');
 }
 
 
