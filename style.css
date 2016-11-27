@@ -9,6 +9,7 @@ html, body {
 body {
   margin: 0;
   min-width: 320px;
+
 }
 
 /* HEADER */
@@ -59,6 +60,7 @@ body {
 #page3,
 #page4 {
   height: 1000px;
+
   position: relative;;
   z-index: 1;
 }
@@ -93,6 +95,8 @@ body {
   text-align: center;
   background: green;
   border-bottom: grey 10px solid;
+  max-width: 100%;
+  padding: 0 25px 0 25px;
 }
 
 
@@ -102,6 +106,32 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /*background-position: center*/
+}
+
+.home-caption {
+  font-size: 5em; /* remember to change w/ queries*/
+  line-height: .95;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+
+.home-text {
+  line-height: 1.42;
+  color: #fff;
+  max-width: 710px;
+  margin: 0 auto 42px;
+  font-size: 16px;
+  word-wrap: break-word;
+
+  /*font-weight: 300; */
+}
+
+@media(min-width: 860px) {
+  .home-caption {
+    font-size: 12.5em; /* remember to change w/ queries*/
+  }
+
 }
 
 /*@media (min-width: 786px) {
