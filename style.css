@@ -54,6 +54,14 @@ body {
     margin: auto;
 }
 
+.coding-site-icon-bar {
+  min-width: 40%;
+  max-width: 80%;
+  background-color: yellow;
+  margin:auto;
+  font-size: 48px;
+
+}
 
 
 
