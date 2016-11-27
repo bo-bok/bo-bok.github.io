@@ -49,6 +49,7 @@ body {
   width: 50%;
   background-color: green;
   text-align: right;
+  position: fixed;
 }
 
 
@@ -66,13 +67,20 @@ body {
   background-size: cover;
 }
 
-/*.home-opacity-layer {
+
+
+.home-content-container {
+/*background-color: black;*/
+/*min-height: 100%;*/
+position: relative;
+min-height: 100vh;
+height: auto;
+/*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.home-opacity-layer {
   background-color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}*/
+}
 
 @media (max-height: 780px) {
   .home-container {
@@ -86,10 +94,6 @@ body {
   .home-content-container {
     padding: 150px 0;
   }
-
-  /*.home-opacity-layer {
-    padding: -150px 0;
-  }*/
 
 }
 
