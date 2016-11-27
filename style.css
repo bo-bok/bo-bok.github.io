@@ -26,6 +26,7 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: pink;
+  text-align: center;
 }
 
 @media (max-height: 780px) {
@@ -41,6 +42,20 @@ body {
     padding: 150px 0;
   }
 }
+
+.home-content-container h1 {
+    margin-bottom: 30px;
+    font-size: 100px;
+    line-height: .73;
+  }
+
+  .home-content-container h6 {
+    max-width: 710px;
+    margin: auto;
+}
+
+
+
 
 /*.home-inner {
   background-color: purple;
