@@ -19,6 +19,40 @@ body {
   background-color: green;
 }
 
+/* HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background-color: orange;
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  display: table;
+}
+
+.header-logo,
+.header-menu
+ {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-logo {
+  width: 50%;
+  background-color: yellow;
+  text-align: left;
+}
+
+
+.header-menu {
+  width: 50%;
+  background-color: green;
+  text-align: right;
+}
+
+
+
 .home-container {
   top: 0;
   left: 0;
@@ -27,7 +61,18 @@ body {
   overflow: hidden;
   background-color: pink;
   text-align: center;
+  background: url('NR_DoL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/*.home-opacity-layer {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}*/
 
 @media (max-height: 780px) {
   .home-container {
@@ -41,6 +86,11 @@ body {
   .home-content-container {
     padding: 150px 0;
   }
+
+  /*.home-opacity-layer {
+    padding: -150px 0;
+  }*/
+
 }
 
 .home-content-container h1 {
@@ -52,6 +102,7 @@ body {
 .home-content-container h6 {
   max-width: 710px;
   margin: auto;
+  font-size: 16px;
 }
 
 .coding-site-icon-bar {
@@ -92,10 +143,3 @@ body {
 #homepage-project-3 {
   background: url('NR_Z.jpg');
 }
-
-
-
-/*.home-inner {
-  background-color: purple;
-  min-height: 500px;
-}*/
