@@ -18,3 +18,29 @@ body {
   transform-origin: 50% 50vh;
   background-color: green;
 }
+
+.home-container {
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  overflow: hidden;
+  background-color: pink;
+}
+
+@media (max-height: 780px) {
+  .home-container {
+    position: relative;
+    display: table;
+    min-height: 100vh;
+    height: auto;
+    background-color: red;
+  }
+
+
+}
+
+/*.home-inner {
+  background-color: purple;
+  min-height: 500px;
+}*/
