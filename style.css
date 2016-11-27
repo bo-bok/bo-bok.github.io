@@ -90,6 +90,7 @@ body {
 .page-content-container {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
   background: green;
   border-bottom: grey 10px solid;
 }
