@@ -137,11 +137,18 @@ height: auto;
 
 
 #homepage-project-1 {
-  background: url('ocean.jpg');
+  background: url('Assets/background-images/em-solo-800px.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  background-position: left bottom;
 }
 
 #homepage-project-2 {
-  background: url('NR_DoL.jpeg');
+  background: url('Assets/background-images/mw-paint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 #homepage-project-3 {
