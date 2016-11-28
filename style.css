@@ -148,7 +148,13 @@ height: auto;
   background: url('Assets/background-images/mw-paint.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+.project2-opacity-layer {
+  background-color: rgba(193, 190, 193, 0.5);
+  position: relative;
+  min-height: 100vh;
+  height: auto;
 }
 
 #homepage-project-3 {
