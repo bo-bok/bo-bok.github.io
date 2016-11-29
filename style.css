@@ -20,7 +20,7 @@ body {
   position: absolute;
   top: 0;
   z-index: 999;
-  background-color: orange;
+  /*background-color: orange;*/
   width: 100%;
   min-height: 70px;
   padding: 10px;
@@ -36,13 +36,13 @@ body {
 
 .header-logo {
   width: 50%;
-  background-color: yellow;
+  /*background-color: yellow;*/
   text-align: left;
 }
 
 .header-menu {
   width: 50%;
-  background-color: green;
+  /*background-color: green;*/
   text-align: right;
   position: fixed;
 }
@@ -56,6 +56,25 @@ body {
   transform-origin: 50% 50vh;
   background-color: green;
 }
+
+.home-container {
+  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
+}
+
+.home-opacity-layer {
+  background-color: rgba(54, 52, 54, 0.7);
+  width: 100%;
+}
+
+.home-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+/*.opac {
+  background-color: rgba(54, 52, 54, 0.1);
+  width: 100%;
+}*/
 
 #homepage-project-1 {
   background: url('Assets/background-images/em-solo-800px.jpg');
@@ -89,7 +108,7 @@ body {
   overflow: hidden;
   background-color: pink;
   text-align: center;
-  background: url('NR_Z.jpg');
+  /*background: url('NR_Z.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -101,10 +120,10 @@ body {
   display: table;
 }
 
-.home-opacity-layer {
+/*.home-opacity-layer {
   background-color: rgba(124, 121, 125, 0.6);
   width: 100%;
-}
+}*/
 
 .home-inner {
   display: table-cell;
@@ -129,18 +148,28 @@ body {
   margin-bottom: 30px;
   font-size: 100px;
   line-height: .73;
+  font-family: "tablet-gothic-narrow",sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .home-content-container h6 {
   max-width: 710px;
   margin: auto;
-  font-size: 16px;
+  font-size: 18px;
+  color: #fff;
+  font-family: "tablet-gothic-narrow",sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+  word-break: keep-all;
+
 }
 
 .coding-site-icon-bar {
   min-width: 40%;
   max-width: 80%;
-  background-color: yellow;
+  /*background-color: yellow;*/
   margin: auto;
   font-size: 48px;
 }
@@ -170,7 +199,7 @@ body {
   margin-right:0;
 }
 
-
+s
 /* PROJECT 1*/
 /* =============================================================== */
 
