@@ -16,13 +16,6 @@ body {
   min-width: 320px;
 }
 
-.down-arrow {
-  min-width: 70px;
-  position: absolute;
-  left: 50%;
-  bottom: 60px;
-
-}
 
 /* HEADER */
 /* ========================================================================= */
@@ -74,25 +67,6 @@ body {
   background-color: green;
 }
 
-.home-container {
-  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
-}
-
-.home-opacity-layer {
-  background-color: rgba(54, 52, 54, 0.7);
-  width: 100%;
-}
-
-.home-inner {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 100%;
-}
-
-/*.opac {
-  background-color: rgba(54, 52, 54, 0.1);
-  width: 100%;
-}*/
-
 #homepage-project-1 {
   background: url('Assets/background-images/em-solo-650.jpg');
   background-repeat: no-repeat;
@@ -113,6 +87,14 @@ body {
   background-size: cover;
 }
 
+.down-arrow {
+  min-width: 70px;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+}
+
+
 /* HOME PAGE (1st section) */
 /* ========================================================================= */
 
@@ -125,9 +107,9 @@ body {
   overflow: hidden;
   background-color: pink;
   text-align: center;
-  /*background: url('NR_Z.jpg');*/
   background-repeat: no-repeat;
   background-size: cover;
+  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
 }
 
 .home-content-container {
@@ -137,16 +119,27 @@ body {
   display: table;
 }
 
-/*.home-opacity-layer {
-  background-color: rgba(124, 121, 125, 0.6);
+.home-opacity-layer {
+  background-color: rgba(54, 52, 54, 0.7);
   width: 100%;
-}*/
+}
 
 .home-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
+/*.opac {
+  background-color: rgba(54, 52, 54, 0.1);
+  width: 100%;
+}*/
+
+/*.home-opacity-layer {
+  background-color: rgba(124, 121, 125, 0.6);
+  width: 100%;
+}*/
 
 @media (max-height: 780px) {
   .home-container {
@@ -177,15 +170,10 @@ margin:0.2em;
   margin: auto;
   font-size: 18px;
   color: #fff;
-  /*font-family: 'Raleway', sans-serif;*/
-  /*font-family: 'Lato', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-
-
   font-weight: 300;
   word-wrap: break-word;
   word-break: keep-all;
-
 }
 
 .coding-site-icon-bar {
@@ -218,8 +206,28 @@ margin:0.2em;
 }
 
 .hp-project-logo {
-  margin-right:0;
+  margin-right: 0;
 }
+
+/* PROJECT PAGE TEXT CONTENT */
+.project-title {
+  font-size: 4em;
+  line-height: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #534f53;
+  text-transform: uppercase;
+}
+
+.project-title-link {
+  text-decoration: none;
+  color: #534f53;
+}
+
+.project-website-link {
+  text-decoration: none;
+}
+
 
 /* PROJECT 1*/
 /* =============================================================== */
