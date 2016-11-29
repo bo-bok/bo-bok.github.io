@@ -13,6 +13,13 @@ body {
   min-width: 320px;
 }
 
+.down-arrow {
+  min-width: 70px;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+
+}
 
 /* HEADER */
 /* ========================================================================= */
@@ -28,8 +35,7 @@ body {
 }
 
 .header-logo,
-.header-menu
- {
+.header-coding-site-icons {
   display: table-cell;
   vertical-align: middle;
 }
