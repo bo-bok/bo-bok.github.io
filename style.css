@@ -40,11 +40,19 @@ body {
   text-align: left;
 }
 
-.header-menu {
+.header-coding-site-icons {
   width: 50%;
   /*background-color: green;*/
   text-align: right;
   position: fixed;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.csi {
+  height: 35px;
+  padding-left: 10px;
 }
 
 
