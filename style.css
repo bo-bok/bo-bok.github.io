@@ -224,8 +224,21 @@ margin:0.2em;
   color: #534f53;
 }
 
-.project-website-link {
+.project-website-link,
+.project-info-link {
   text-decoration: none;
+  border: 1px solid #534f53;
+  color: #534f53;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.project-website {
+  margin-top: 10px;
+
 }
 
 
