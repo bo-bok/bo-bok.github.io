@@ -1,3 +1,5 @@
+/* UNIVERSAL STYLES */
+/* ========================================================================= */
 * {
   box-sizing: border-box;
 }
@@ -9,17 +11,11 @@ html, body {
 body {
   margin: 0;
   min-width: 320px;
-  /*background: pink;*/
 }
 
-.page-container { 
-  position: relative ;
-  z-index: 1;
-  transform-origin: 50% 50vh;
-  background-color: green;
-}
 
 /* HEADER */
+/* ========================================================================= */
 .header {
   position: absolute;
   top: 0;
@@ -44,7 +40,6 @@ body {
   text-align: left;
 }
 
-
 .header-menu {
   width: 50%;
   background-color: green;
@@ -53,102 +48,14 @@ body {
 }
 
 
-
-.home-container {
-  top: 0;
-  left: 0;
-  z-index: 8;
-  width: 100%;
-  overflow: hidden;
-  background-color: pink;
-  text-align: center;
-  background: url('NR_Z.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*display: table;*/
-
-
+/* PAGE SETUP */
+/* ========================================================================= */
+.page-container { 
+  position: relative ;
+  z-index: 1;
+  transform-origin: 50% 50vh;
+  background-color: green;
 }
-
-
-
-
-.home-content-container {
-/*background-color: black;*/
-/*min-height: 100%;*/
-position: relative;
-min-height: 100vh;
-height: auto;
-display: table;
-/*background-color: rgba(255, 255, 255, 0.5);*/
-/*display: table;
-vertical-align: middle;*/
-}
-
-.home-opacity-layer {
-  background-color: rgba(124, 121, 125, 0.6);
-  width: 100%;
-
-}
-
-@media (max-height: 780px) {
-  .home-container {
-    position: relative;
-    /*display: table;*/
-    min-height: 100vh;
-    height: auto;
-    background-color: red;
-  }
-
-  /*.home-content-container {
-    padding: 150px 0;
-  }*/
-
-}
-
-.home-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.home-content-container h1 {
-    margin-bottom: 30px;
-    font-size: 100px;
-    line-height: .73;
-  }
-
-.home-content-container h6 {
-  max-width: 710px;
-  margin: auto;
-  font-size: 16px;
-}
-
-.coding-site-icon-bar {
-  min-width: 40%;
-  max-width: 80%;
-  background-color: yellow;
-  margin: auto;
-  font-size: 48px;
-
-}
-
-/* PROJECT PAGES */
-
-.homepage-project {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: table;
-}
-
-.homepage-project-content {
-  width: 100%;
-  padding: 10px;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
 
 #homepage-project-1 {
   background: url('Assets/background-images/em-solo-800px.jpg');
@@ -164,6 +71,112 @@ vertical-align: middle;*/
   background-size: cover;
 }
 
+#homepage-project-3 {
+  background: url('NR_DoL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* HOME PAGE (1st section) */
+/* ========================================================================= */
+
+/* page setup */
+.home-container {
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  overflow: hidden;
+  background-color: pink;
+  text-align: center;
+  background: url('NR_Z.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content-container {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  display: table;
+}
+
+.home-opacity-layer {
+  background-color: rgba(124, 121, 125, 0.6);
+  width: 100%;
+}
+
+.home-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+@media (max-height: 780px) {
+  .home-container {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    background-color: red;
+  }
+  /*.home-content-container {
+    padding: 150px 0;
+  }*/
+}
+
+/* homepage content styling */
+.home-content-container h1 {
+  margin-bottom: 30px;
+  font-size: 100px;
+  line-height: .73;
+}
+
+.home-content-container h6 {
+  max-width: 710px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.coding-site-icon-bar {
+  min-width: 40%;
+  max-width: 80%;
+  background-color: yellow;
+  margin: auto;
+  font-size: 48px;
+}
+
+
+
+/* PROJECT PAGES */
+/* ========================================================================= */
+
+/* UNIVERSAL STYLING FOR PROJECT PAGES*/
+.homepage-project {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: table;
+}
+
+.homepage-project-content {
+  width: 100%;
+  padding: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hp-project-logo {
+  margin-right:0;
+}
+
+
+/* PROJECT 1*/
+/* =============================================================== */
+
+
+/* PROJECT 2*/
+/* =============================================================== */
 .project2-opacity-layer {
   background-color: rgba(193, 190, 193, 0.5);
   position: relative;
@@ -171,12 +184,6 @@ vertical-align: middle;*/
   height: auto;
 }
 
-.hp-project-logo {
-  margin-right:0;
-}
 
-#homepage-project-3 {
-  background: url('NR_DoL.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* PROJECT 3*/
+/* =============================================================== */
