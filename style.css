@@ -62,10 +62,14 @@ body {
   overflow: hidden;
   background-color: pink;
   text-align: center;
-  background: url('NR_DoL.jpeg');
+  background: url('NR_Z.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  /*display: table;*/
+
+
 }
+
 
 
 
@@ -75,26 +79,36 @@ body {
 position: relative;
 min-height: 100vh;
 height: auto;
+display: table;
 /*background-color: rgba(255, 255, 255, 0.5);*/
+/*display: table;
+vertical-align: middle;*/
 }
 
 .home-opacity-layer {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(124, 121, 125, 0.6);
+  width: 100%;
+
 }
 
 @media (max-height: 780px) {
   .home-container {
     position: relative;
-    display: table;
+    /*display: table;*/
     min-height: 100vh;
     height: auto;
     background-color: red;
   }
 
-  .home-content-container {
+  /*.home-content-container {
     padding: 150px 0;
-  }
+  }*/
 
+}
+
+.home-inner {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .home-content-container h1 {
@@ -157,6 +171,12 @@ height: auto;
   height: auto;
 }
 
+.hp-project-logo {
+  margin-right:0;
+}
+
 #homepage-project-3 {
-  background: url('NR_Z.jpg');
+  background: url('NR_DoL.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
