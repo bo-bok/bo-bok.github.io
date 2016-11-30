@@ -5,7 +5,7 @@
 /* ========================================================================= */
 
 /* Project Modal box */
-.modal {
+.modal-container {
   display: none;
   position: absolute;
   z-index: 10000;
@@ -26,6 +26,7 @@
 
 .modal-header {
   display: table-cell;
+  vertical-align: middle;
   height: 20%;
   width: 100%;
   background-color: green;
@@ -39,10 +40,11 @@
   background-color: pink;
   float: left;
   clear: both;
+  overflow: scroll;
 }
 
 
-.modalClose {
+.modal-close {
   float: left;
   height: 40px;
   width: 40px;
@@ -52,11 +54,25 @@
 }
 
 @media (min-width: 800px) {
-  .modal {
+  .modal-container {
     width: 50%;
   }
 }
 
+.modal-body p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #534f53;
+  font-size: 1.25em
+}
+
+.modal-header h2 {
+  font-size: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #534f53;
+  text-transform: uppercase;
+}
 
 
 
