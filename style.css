@@ -17,11 +17,12 @@
     background-color: yellow;
 }
 
-.modalClose{
+.modalClose {
   float: left;
   height: 40px;
   width: 40px;
   padding: 10px;
+  cursor: pointer;
 }
 
 
@@ -42,6 +43,10 @@ html, body {
 body {
   margin: 0;
   min-width: 320px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2 {
@@ -302,6 +307,7 @@ h6 {
   position: absolute;
   bottom: 60px;
   padding: 10px;
+  z-index: 9999;
 }
 
 @media (min-width: 566px) {
