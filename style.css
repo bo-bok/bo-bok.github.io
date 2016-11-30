@@ -261,6 +261,7 @@ body {
   font-weight: 300;
   color: #534f53;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 .project-title-link {
@@ -291,7 +292,7 @@ body {
 .em-content-table {
   display: table;
   /*background: pink;*/
-  width: 50%;
+  width: 100%;
   float: right;
   height: 100%;
 
@@ -316,7 +317,7 @@ body {
 
 .mw-content-table {
   display: table;
-  width: 50%;
+  width: 100%;
   float: left;
   height: 100%;
 
@@ -327,4 +328,18 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 0;
   vertical-align: middle;
+}
+
+/* responsiveness of projects */
+
+@media (min-width: 800px) {
+  /*EM*/
+  .em-content-table,
+  .mw-content-table {
+    width: 50%;
+  }
+
+
+
+  /*MW*/
 }
