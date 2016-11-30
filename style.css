@@ -66,12 +66,38 @@ body {
 }
 
 .down-arrow {
-  width: 6%;
-  left: 47%;
+  width: 16%;
+  left: 42%;
   position: absolute;
   bottom: 60px;
+  padding: 10px;
 }
 
+@media (min-width: 566px) {
+  .down-arrow {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 730px) {
+  .down-arrow {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 830px) {
+  .down-arrow {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .down-arrow {
+    width: 10%;
+    left: 45%;
+    padding: 35px;
+  }
+}
 
 /* HOME PAGE (1st section) */
 /* ========================================================================= */
@@ -190,7 +216,7 @@ body {
     .home-content-container h1 {
       font-size: 100px;
     }
-    
+
     .home-content-container h6 {
       max-width: 70%;
       margin: auto;
