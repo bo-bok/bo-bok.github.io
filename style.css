@@ -88,9 +88,9 @@ body {
 }
 
 .down-arrow {
-  min-width: 70px;
+  width: 6%;
+  left: 47%;
   position: absolute;
-  left: 50%;
   bottom: 60px;
 }
 
@@ -107,9 +107,10 @@ body {
   overflow: hidden;
   background-color: pink;
   text-align: center;
+  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
+  /*background-attachment: fixed;*/
 }
 
 .home-content-container {
@@ -199,7 +200,7 @@ margin:0.2em;
 
 .homepage-project-content {
   width: 100%;
-  padding: 10px;
+  /*padding: 10px;*/
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -244,6 +245,21 @@ margin:0.2em;
 
 /* PROJECT 1*/
 /* =============================================================== */
+.em-content-table {
+  display: table;
+  /*background: pink;*/
+  width: 50%;
+  float: right;
+  height: 100%;
+
+}
+
+.em-content-table-cell {
+  display: table-cell;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0;
+  vertical-align: middle;
+}
 
 
 /* PROJECT 2*/
@@ -253,6 +269,21 @@ margin:0.2em;
   position: relative;
   min-height: 100vh;
   height: auto;
+}
+
+.mw-content-table {
+  display: table;
+  width: 50%;
+  float: left;
+  height: 100%;
+
+}
+
+.mw-content-table-cell {
+  display: table-cell;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  vertical-align: middle;
 }
 
 
