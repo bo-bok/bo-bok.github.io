@@ -6,15 +6,15 @@
 
 /* Project Modal box */
 .modal {
-    display: none;
-    position: absolute;
-    z-index: 100;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    overflow: auto;
-    background-color: yellow;
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  background-color: yellow;
 }
 
 .modalClose {
@@ -23,6 +23,7 @@
   width: 40px;
   padding: 10px;
   cursor: pointer;
+  background-color: red;
 }
 
 
