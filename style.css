@@ -26,29 +26,13 @@ body {
   /*background-color: orange;*/
   width: 100%;
   min-height: 70px;
-  padding: 10px;
-  display: table;
-}
-
-.header-logo,
-.header-coding-site-icons {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.header-logo {
-  width: 50%;
-  /*background-color: yellow;*/
-  text-align: left;
 }
 
 .header-coding-site-icons {
-  width: 50%;
+  width: 100%;
   /*background-color: green;*/
   text-align: right;
   position: fixed;
-  display: inline-block;
-  color: #fff;
   padding: 10px 20px;
 }
 
