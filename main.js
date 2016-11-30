@@ -1,19 +1,36 @@
-// Get the modal
-var projectModal = document.getElementById('projectModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("projectModalBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("modalClose")[0];
-
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    projectModal.style.display = "block";
+function hasClassName (node, className) {
+  return node.className.indexOf(className) !== -1;
 }
 
-// When the user clicks on cross icon, close the modal
-span.onclick = function() {
-    projectModal.style.display = "none";
+function findParentByClassName (node, className) {
+  // if the parent of node has this className, return or else go up another level
+  if (hasClassName(node.parentNode, className)) {
+    return node.parentNode;
+  }
+  else {
+    return findParentByClassName(node.parentNode, className)
+  }
+}
+
+
+document.body.onclick = function (event) {
+  // if it includes this class name
+  if (hasClassName (event.target, "project-info-link")) {
+    // figure out what is the relevant thing
+    var projectModal = event.target.parentNode.getElementsByClassName("modal-container")[0];
+    // show that particular modal
+    projectModal.style.display = "block";
+    event.preventDefault();
+    return;
+  }
+
+  // if we click on close button we want to close the box that's nearest/ most relvant to it
+  if (hasClassName (event.target.parentNode, "modal-close")) {
+    // find the parent with name 'modal-container'
+    var closeModal = findParentByClassName(event.target, 'modal-container');
+    // hide that particular modal
+    closeModal.style.display = "none";
+    event.preventDefault();
+    return;
+  }
 }
