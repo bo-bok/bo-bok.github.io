@@ -254,6 +254,12 @@ body {
 }
 
 /* PROJECT PAGE TEXT CONTENT */
+
+.project-buttons {
+    margin: 10px;
+    height: auto;
+}
+
 .project-title {
   font-size: 4em;
   line-height: 1em;
@@ -279,6 +285,10 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.project-info-link {
+  margin-right: 15px;
 }
 
 .project-website {
@@ -330,16 +340,12 @@ body {
   vertical-align: middle;
 }
 
-/* responsiveness of projects */
 
+/* responsiveness of projects */
 @media (min-width: 800px) {
   /*EM*/
   .em-content-table,
   .mw-content-table {
     width: 50%;
   }
-
-
-
-  /*MW*/
 }
