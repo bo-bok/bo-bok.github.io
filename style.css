@@ -135,8 +135,8 @@ body {
 
 /* homepage content styling */
 .home-content-container h1 {
-margin:0.2em;
-  font-size: 90px;
+  margin:0.2em;
+  font-size: 60px;
   line-height: 1em;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -145,7 +145,7 @@ margin:0.2em;
 }
 
 .home-content-container h6 {
-  max-width: 710px;
+  max-width: 90%;
   margin: auto;
   font-size: 18px;
   color: #fff;
@@ -153,15 +153,50 @@ margin:0.2em;
   font-weight: 300;
   word-wrap: break-word;
   word-break: keep-all;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
-.coding-site-icon-bar {
-  min-width: 40%;
-  max-width: 80%;
-  /*background-color: yellow;*/
-  margin: auto;
-  font-size: 48px;
-}
+/* responsiveness of text on HP*/
+/* ================================================================ */
+
+  @media (min-width: 510px){
+
+    .home-content-container h1 {
+      font-size: 70px;
+    }
+
+    .home-content-container h6 {
+      max-width: 80%;
+      margin: auto;
+    }
+
+  }
+
+  @media (min-width: 840px){
+
+    .home-content-container h1 {
+      font-size: 80px;
+    }
+    .home-content-container h6 {
+      max-width: 70%;
+      margin: auto;
+    }
+
+  }
+
+  @media (min-width: 1000px){
+
+    .home-content-container h1 {
+      font-size: 100px;
+    }
+    
+    .home-content-container h6 {
+      max-width: 70%;
+      margin: auto;
+    }
+
+  }
 
 
 
