@@ -81,12 +81,6 @@ body {
   background-size: cover;
 }
 
-#homepage-project-3 {
-  background: url('NR_Z.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .down-arrow {
   width: 6%;
   left: 47%;
@@ -285,7 +279,3 @@ margin:0.2em;
   padding: 0;
   vertical-align: middle;
 }
-
-
-/* PROJECT 3*/
-/* =============================================================== */
