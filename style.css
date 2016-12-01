@@ -66,6 +66,10 @@
   font-size: 1.25em
 }
 
+.modal-body p li {
+  width: auto;
+}
+
 .modal-header h2 {
   font-size: 3em;
   font-family: 'Josefin Sans', sans-serif;
@@ -74,7 +78,26 @@
   text-transform: uppercase;
 }
 
+#homepage-project-2 .modal-container {
+  left: 0
+}
 
+.project-description {
+  margin-top: 10%;
+  margin-bottom: 10%:
+}
+
+.modal-project-website-link {
+  text-decoration: none;
+  border: 1px solid #534f53;
+  color: #534f53;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
 
 /* UNIVERSAL STYLES */
 /* ========================================================================= */
