@@ -1,6 +1,103 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
+/* MODAL BOX FORMATTING*/
+/* ========================================================================= */
+
+/* Project Modal box */
+.modal-container {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: yellow;
+}
+
+.modal-content {
+  padding: 25px;
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.modal-header {
+  display: table-cell;
+  vertical-align: middle;
+  height: 20%;
+  width: 100%;
+  background-color: green;
+  float: left;
+  clear: both;
+}
+.modal-body {
+  display: table-cell;
+  height: 80%;
+  width: 100%;
+  background-color: pink;
+  float: left;
+  clear: both;
+  overflow: scroll;
+}
+
+
+.modal-close {
+  float: left;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: red;
+}
+
+@media (min-width: 800px) {
+  .modal-container {
+    width: 50%;
+  }
+}
+
+.modal-body p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #534f53;
+  font-size: 1.25em
+}
+
+.modal-body p li {
+  width: auto;
+}
+
+.modal-header h2 {
+  font-size: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #534f53;
+  text-transform: uppercase;
+}
+
+#homepage-project-2 .modal-container {
+  left: 0
+}
+
+.project-description {
+  margin-top: 10%;
+  margin-bottom: 10%:
+}
+
+.modal-project-website-link {
+  text-decoration: none;
+  border: 1px solid #534f53;
+  color: #534f53;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
 
 /* UNIVERSAL STYLES */
 /* ========================================================================= */
@@ -15,6 +112,10 @@ html, body {
 body {
   margin: 0;
   min-width: 320px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2 {
@@ -275,6 +376,7 @@ h6 {
   position: absolute;
   bottom: 60px;
   padding: 10px;
+  z-index: 11000;
 }
 
 @media (min-width: 566px) {
