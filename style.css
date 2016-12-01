@@ -148,12 +148,13 @@ h6 {
 /* ========================================================================= */
 
 /* Home Page Structure */
+
+/* EXPERIMENT */
 .home-container {
-  top: 0;
-  left: 0;
-  z-index: 8;
   width: 100%;
-  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  display: table;
 
   background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
   background-attachment: fixed;
@@ -163,44 +164,23 @@ h6 {
   text-align: center;
 }
 
-.home-content-container {
-  position: relative;
-  min-height: 100vh;
-  height: auto;
-  display: table;
-}
-
-.home-opacity-layer {
-  background-color: rgba(54, 52, 54, 0.7);
-  width: 100%;
-}
-
 .home-inner {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 100%;
+  min-width: 100%;
   display: table-cell;
   vertical-align: middle;
+  min-height: 100%;
 }
-
-
-@media (max-height: 780px) {
-  .home-container {
-    position: relative;
-    min-height: 100vh;
-    height: auto;
-  }
-}
-
 
 /* Home Page Content */
-.home-content-container h1 {
-  margin:0.2em;
+.home-inner-h1 {
+  text-transform: uppercase;
+  margin: 0.2em;
   font-size: 3.75em;
   color: #fff;
-  text-transform: uppercase;
 }
 
-.home-content-container h6 {
+.home-inner h6 {
   max-width: 90%;
   margin: auto;
   font-size: 1.125em;
@@ -215,28 +195,28 @@ h6 {
 /* ================================================================ */
 
 @media (min-width: 510px){
-  .home-content-container h1 {
+  .home-inner h1 {
     font-size: 4.5em;
   }
-  .home-content-container h6 {
+  .home-inner h6 {
     max-width: 80%;
   }
 }
 
 @media (min-width: 880px){
-  .home-content-container h1 {
+  .home-inner h1 {
     font-size: 5.25em;
   }
-  .home-content-container h6 {
+  .home-inner h6 {
     max-width: 70%;
   }
 }
 
 @media (min-width: 1000px){
-  .home-content-container h1 {
+  .home-inner h1 {
     font-size: 6em;
   }
-  .home-content-container h6 {
+  .home-inner h6 {
     max-width: 70%;
   }
 }
