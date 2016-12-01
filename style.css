@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+/* MODAL BOX FORMATTING*/
+/* ========================================================================= */
+
+/* Project Modal box */
+.modal-container {
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.modal-content {
+  padding: 25px;
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+
+.modal-header {
+  display: table-cell;
+  vertical-align: middle;
+  height: 20%;
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.modal-body {
+  display: table-cell;
+  height: 80%;
+  width: 100%;
+  float: left;
+  clear: both;
+  overflow: scroll;
+}
+
+
+.modal-close {
+  float: left;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .modal-container {
+    width: 50%;
+  }
+}
+
+.modal-body p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #534f53;
+  font-size: 1.25em
+}
+
+.modal-body p li {
+  width: auto;
+}
+
+.modal-header h2 {
+  font-size: 3em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #534f53;
+  text-transform: uppercase;
+}
+
+#homepage-project-2 .modal-container {
+  left: 0
+}
+
+.project-description {
+  margin-top: 10%;
+  margin-bottom: 10%:
+}
+
+.modal-project-website-link {
+  text-decoration: none;
+  border: 1px solid #534f53;
+  color: #534f53;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  margin-top: 30px;
+}
+
+/* UNIVERSAL STYLES */
+/* ========================================================================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2 {
+  line-height: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+/* HEADER */
+/* ========================================================================= */
+.coding-site-icon-bar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.coding-site-icon {
+  height: 55px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+
+/* HOME PAGE (1st section) */
+/* ========================================================================= */
+
+/* Home Page Structure */
+.home-container {
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  overflow: hidden;
+
+  background: url('Assets/background-images/stepsToTheHimalayas-1924-sikkimSeries.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+}
+
+.home-content-container {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  display: table;
+}
+
+.home-opacity-layer {
+  background-color: rgba(54, 52, 54, 0.7);
+  width: 100%;
+}
+
+.home-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+@media (max-height: 780px) {
+  .home-container {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+  }
+}
+
+
+/* Home Page Content */
+.home-content-container h1 {
+  margin:0.2em;
+  font-size: 3.75em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home-content-container h6 {
+  max-width: 90%;
+  margin: auto;
+  font-size: 1.125em;
+  color: #fff;
+  word-wrap: break-word;
+  word-break: keep-all;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+/* responsiveness of text*/
+/* ================================================================ */
+
+@media (min-width: 510px){
+  .home-content-container h1 {
+    font-size: 4.5em;
+  }
+  .home-content-container h6 {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 880px){
+  .home-content-container h1 {
+    font-size: 5.25em;
+  }
+  .home-content-container h6 {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1000px){
+  .home-content-container h1 {
+    font-size: 6em;
+  }
+  .home-content-container h6 {
+    max-width: 70%;
+  }
+}
+
+
+
+/* PROJECT PAGES */
+/* ========================================================================= */
+
+/* UNIVERSAL STYLING FOR PROJECT PAGES*/
+.homepage-project {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: table;
+}
+
+.homepage-project-content {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* PROJECT PAGE TEXT CONTENT */
+.project-buttons {
+  margin: 10px;
+}
+
+.project-title {
+  font-size: 4em;
+  line-height: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  color: #534f53;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.project-title-link {
+  text-decoration: none;
+  color: #534f53;
+}
+
+.project-website-link,
+.project-info-link {
+  text-decoration: none;
+  border: 1px solid #534f53;
+  color: #534f53;
+  padding: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.project-info-link {
+  margin-right: 15px;
+}
+
+
+/* PROJECT 1*/
+/* =============================================================== */
+#homepage-project-1 {
+  background: url('Assets/background-images/em-solo-650.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  background-position: left bottom;
+}
+
+.em-content-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.em-content-table-cell {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+}
+
+
+/* PROJECT 2 */
+/* =============================================================== */
+#homepage-project-2 {
+  background: url('Assets/background-images/mw-paint.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project2-opacity-layer {
+  background-color: rgba(193, 190, 193, 0.5);
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+}
+
+.mw-content-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+.mw-content-table-cell {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0;
+}
+
+
+/* responsiveness of projects */
+@media (min-width: 800px) {
+  /*EM*/
+  .em-content-table,
+  .mw-content-table {
+    width: 50%;
+  }
+}
+
+
+
+/* PAGE DOWN ARROW */
+/* =============================================================== */
+.down-arrow {
+  width: 16%;
+  left: 42%;
+  position: absolute;
+  bottom: 60px;
+  padding: 10px;
+  z-index: 11000;
+}
+
+@media (min-width: 566px) {
+  .down-arrow {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 730px) {
+  .down-arrow {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 830px) {
+  .down-arrow {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .down-arrow {
+    width: 10%;
+    left: 45%;
+    padding: 35px;
+  }
+}
